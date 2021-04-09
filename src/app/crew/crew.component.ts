@@ -26,7 +26,16 @@ export class CrewComponent implements OnInit {
 
   // Code the 'addCrewMember' function here:
   addCrewMember(astronaut: object) {
-    this.crew.push(astronaut);
+    if (this.crew.includes(astronaut)) { 
+      this.inCrew = true;
+    } else {
+      this.inCrew = false;
+    }
+    if (this.inCrew === true) {
+      this.crew.splice(this.crew.indexOf(astronaut), 1);
+    } else if (this.inCrew === false && this.crew.length < 3) {
+      this.crew.push(astronaut);
+    } 
   }
 
 }
