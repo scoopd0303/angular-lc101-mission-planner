@@ -11,13 +11,13 @@ export class CrewComponent implements OnInit {
   crew: object[] = [];
 
   candidates: object[] = [
-    {name: "Sally Ride", photo: 'https://handlers.education.launchcode.org/static/images/sally-ride.jpg'},
-    {name: "Mae Jemison", photo: 'https://handlers.education.launchcode.org/static/images/mae-jemison.jpg'},
-    {name: "Ellen Ochoa", photo: 'https://handlers.education.launchcode.org/static/images/ellen-ochoa.jpg'},
-    {name: "Frederick Gregory", photo: 'https://handlers.education.launchcode.org/static/images/frederick-gregory.jpg'},
-    {name: "Guion Bluford", photo: 'https://handlers.education.launchcode.org/static/images/guion-bluford.jpg'},
-    {name: "Kjell Lindgren", photo: 'https://handlers.education.launchcode.org/static/images/kjell-lindgren.jpg'},
-    {name: "Jeanette Epps", photo: 'https://handlers.education.launchcode.org/static/images/jeanette-epps.jpg'}
+    {name: "Sally Ride", favoriteColor: 'purple', photo: 'https://handlers.education.launchcode.org/static/images/sally-ride.jpg'},
+    {name: "Mae Jemison", favoriteColor: 'orange', photo: 'https://handlers.education.launchcode.org/static/images/mae-jemison.jpg'},
+    {name: "Ellen Ochoa", favoriteColor: 'ochre', photo: 'https://handlers.education.launchcode.org/static/images/ellen-ochoa.jpg'},
+    {name: "Frederick Gregory", favoriteColor: 'sea green', photo: 'https://handlers.education.launchcode.org/static/images/frederick-gregory.jpg'},
+    {name: "Guion Bluford", favoriteColor: 'mauve', photo: 'https://handlers.education.launchcode.org/static/images/guion-bluford.jpg'},
+    {name: "Kjell Lindgren", favoriteColor: 'blue', photo: 'https://handlers.education.launchcode.org/static/images/kjell-lindgren.jpg'},
+    {name: "Jeanette Epps", favoriteColor: 'aqua', photo: 'https://handlers.education.launchcode.org/static/images/jeanette-epps.jpg'}
   ];
 
   constructor() { }

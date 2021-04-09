@@ -1,7 +1,14 @@
 <div class="displayBox">
     <h3>Possible Experiments</h3>
     <ul>
-      <li *ngFor="let experiment of experiments">{{experiment}}</li>
+      <li *ngFor="let experiment of experiments" (click)="addToAgenda(experiment)" [class.selected]="missionAgenda.includes(experiment)">{{experiment}}</li>
     </ul>
 </div>
 <hr>
+<div class="displayBox">
+  <h3>Mission Agenda</h3>
+  <ul>
+    <li *ngFor="let agendaItem of missionAgenda">{{agendaItem}}</li>
+  </ul>
+</div>
+
